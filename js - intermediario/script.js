@@ -37,7 +37,7 @@ function hideTittle(){
     h1 = document.getElementsByTagName("h1")[0];
 
     h1.style.display = "none"
-}*/
+}
 
     // MANIPULANDO O DOM PT 2/3
 
@@ -87,5 +87,22 @@ function mudarCor(){
 
 
     }
+}*/
+
+        //COMEÇANDO A ENTEDER O JSON
+
+let aluno = {
+    nome: "Gabriel",
+    nota: 9
 }
 
+let aluno1 = JSON.stringify(aluno);
+
+let aluno2 = '{"nome": "Bianca", "nota": 9.0}'
+let aluno22 = JSON.parse(aluno2);
+
+console.log(aluno)
+console.log(aluno1)
+
+console.log(aluno2)
+console.log(aluno22)
