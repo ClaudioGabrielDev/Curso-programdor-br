@@ -87,7 +87,7 @@ function mudarCor(){
 
 
     }
-}*/
+}
 
         //COMEÇANDO A ENTEDER O JSON
 
@@ -105,4 +105,44 @@ console.log(aluno)
 console.log(aluno1)
 
 console.log(aluno2)
-console.log(aluno22)
+console.log(aluno22);*/
+
+//          RELEMBRANDO
+/* function creatObject(nome, nota){
+    let aluno = {
+        name: nome,
+        notas: nota
+    }
+
+    return aluno
+}
+
+var alu = creatObject("Gabriel", 7.5)
+
+console.log(alu) */
+
+//      ENTENDENDO O LOCALSTORAGE
+
+onload = function(){
+    let carregado = localStorage.getItem("nome");
+    let h1 = document.getElementById("title");
+    
+    h1.innerHTML = carregado
+    }
+
+function novoh1(element){
+    let valor = element.value;
+    console.log(valor);
+
+    let h1 = document.getElementById("title");
+    if (valor == ""){
+        h1.innerHTML = "Escreva Algo"
+    }else {
+        h1.innerHTML = valor
+    }
+
+    localStorage.setItem("nome", valor)
+    
+}
+
+
