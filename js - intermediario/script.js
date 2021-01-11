@@ -153,4 +153,27 @@ image.addEventListener("click", function(){
     image.setAttribute("src", "../img/deslike.png")
 })
 
+let lista = document.getElementById("lista")
+let num = lista.getAttribute("num");
 
+let conteudo = ""
+
+for (i = 1; i <= num; i++){
+    conteudo += "<li>" + i + "</li>"
+}
+
+lista.innerHTML = conteudo
+
+let lista2 = document.getElementById("lista2");
+lista2.dataset.n = 5
+let n = lista2.dataset.n;
+
+
+
+let conteudo2 = ""
+
+for (i = 1; i <= n; i++){
+    conteudo2 += "<li>" + i + "</li>"
+}
+
+lista2.innerHTML = conteudo2
