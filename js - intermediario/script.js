@@ -123,7 +123,7 @@ console.log(alu) */
 
 //      ENTENDENDO O LOCALSTORAGE
 
-onload = function(){
+/* onload = function(){
     let carregado = localStorage.getItem("nome");
     let h1 = document.getElementById("title");
     
@@ -143,6 +143,14 @@ function novoh1(element){
 
     localStorage.setItem("nome", valor)
     
-}
+} */
+
+            //HTML INTERMEDIARIO
+
+let image = document.getElementById("img");
+
+image.addEventListener("click", function(){
+    image.setAttribute("src", "../img/deslike.png")
+})
 
 
