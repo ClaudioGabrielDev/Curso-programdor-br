@@ -11,16 +11,40 @@
     </style>
     <title>Iniciando JS - intermediario</title>
 
-    <!-- <style>
-        button{
+    <style>
+        /* button{
             padding: 20px;
             background-color: rgb(60, 60, 185);
             color: white;
             border: none;
             margin: 10px;
             border-radius: 5px;
+        } */
+
+        .container{
+            position: relative;
+            max-width: 640px;
+            height: 360px;
         }
-    </style> -->
+        video{
+            width: 100%;
+        }
+        .controles{
+            position:absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .btn{
+            position: relative;
+            top: 100%;
+            transform: translateY(-120%);
+            padding: 10px;
+            color: white;
+        }
+        
+    </style>
 </head>
 <body>
     <!-- <h1 id="title">Titulo</h1>
@@ -48,9 +72,9 @@
     <button id="bt2">Mesma coisa</button> 
     
     <h1 id="title">Oi</h1>
-    <input type="text" name="" id="input" oninput="novoh1(this)"> -->
+    <input type="text" name="" id="input" oninput="novoh1(this)"> 
 
-    <!-- INICIANDO HTML INTERMEDIARIO -->
+     INICIANDO HTML INTERMEDIARIO 
 
     <img id="img" src="../img/like.png" alt="like">
 
@@ -60,8 +84,30 @@
 
     <ul id="lista2" data-n=9>
 
-    </ul>
+    </ul> 
 
+    TAG VIDEO 
+
+    <video width="600px" controls muted src="./videos/aula-da-rocket.mp4" poster="./videos/play.JPG"></video> -->
+
+    <div class="container">
+
+        <video src="./videos/aula-da-rocket.mp4"></video>
+
+    
+
+    <div class="controles">
+
+        <img class="btn" src=".videos/menos-15.jpg" alt="menos15">
+        <img class="btn" src=".videos/mais-15.jpg" alt="mais15">
+        <img class="btn" src=".videos/volume-mais.jpg" alt="mais">
+        <img class="btn" src=".videos/volume-menos.jpg" alt="menos">
+        <img class="btn" src=".videos/play.jpg" alt="play">
+        <img class="btn" src=".videos/pause.jpg" alt="pause">
+        <img class="btn" src=".videos/stop.jpg" alt="stop">
+
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

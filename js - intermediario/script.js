@@ -143,7 +143,7 @@ function novoh1(element){
 
     localStorage.setItem("nome", valor)
     
-} */
+} 
 
             //HTML INTERMEDIARIO
 
@@ -176,4 +176,8 @@ for (i = 1; i <= n; i++){
     conteudo2 += "<li>" + i + "</li>"
 }
 
-lista2.innerHTML = conteudo2
+lista2.innerHTML = conteudo2 */
+
+        // tag VIDEO
+
+
