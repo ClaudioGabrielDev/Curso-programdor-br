@@ -35,6 +35,7 @@
             width: 100%;
             height: 100%;
             text-align: center;
+            display: none;
         }
         .btn{
             position: relative;
@@ -92,19 +93,19 @@
 
     <div class="container">
 
-        <video src="./videos/aula-da-rocket.mp4"></video>
+        <video id="video" src="./videos/aula-da-rocket.mp4"></video>
 
     
 
-    <div class="controles">
+    <div id="controles"  class="controles">
 
-        <img class="btn" src=".videos/menos-15.jpg" alt="menos15">
-        <img class="btn" src=".videos/mais-15.jpg" alt="mais15">
-        <img class="btn" src=".videos/volume-mais.jpg" alt="mais">
-        <img class="btn" src=".videos/volume-menos.jpg" alt="menos">
-        <img class="btn" src=".videos/play.jpg" alt="play">
-        <img class="btn" src=".videos/pause.jpg" alt="pause">
-        <img class="btn" src=".videos/stop.jpg" alt="stop">
+        <img class="btn" onclick="retroceder()" src=".videos/menos-15.jpg" alt="menos15">
+        <img class="btn" onclick="avancar()" src=".videos/mais-15.jpg" alt="mais15">
+        <img class="btn" onclick="acelerar()" src=".videos/volume-mais.jpg" alt="mais">
+        <img class="btn" onclick="diminuir()" src=".videos/volume-menos.jpg" alt="menos">
+        <img class="btn" onclick="play()" src=".videos/play.jpg" alt="play">
+        <img class="btn" onclick="pause()" src=".videos/pause.jpg" alt="pause">
+        <img class="btn" onclick="stop()" src=".videos/stop.jpg" alt="stop">
 
     </div>
     </div>

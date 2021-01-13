@@ -180,4 +180,39 @@ lista2.innerHTML = conteudo2 */
 
         // tag VIDEO
 
+let video = document.getElementById("video");
+let controles = document.getElementById("controles")
+console.log(controles)
 
+video.addEventListener("mouseenter", mostrar)
+video.addEventListener("mouseleave", esconder)
+
+function mostrar(){
+    controles.style.display = "block";
+}
+function esconder(){
+    controles.style.display = "none";
+}
+
+function retroceder(){
+    video.currentTime -= 15
+}
+function avancar(){
+    video.currentTime += 15
+}
+function acelerar(){
+    video.playbackRate += 0.1
+}
+function diminuir(){
+    video.playbackRate -= 0.1
+}
+function play(){
+    video.play();
+}
+function pause(){
+    video.pause();
+}
+function stop(){
+    video.pause();
+    video.currentTime = 0;
+}
