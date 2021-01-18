@@ -180,7 +180,7 @@ lista2.innerHTML = conteudo2 */
 
         // tag VIDEO
 
-let video = document.getElementById("video");
+/* let video = document.getElementById("video");
 let controles = document.getElementById("controles")
 console.log(controles)
 
@@ -215,4 +215,16 @@ function pause(){
 function stop(){
     video.pause();
     video.currentTime = 0;
-}
+} */
+
+// CONHECENDO O CANVAS
+
+let tela = document.getElementById("tela");
+
+let ctx = tela.getContext("2d");
+
+ctx.moveTo(0, 0);
+ctx.lineTo(250, 250);
+ctx.lineTo(500, 0);
+ctx.lineWidth = 5;
+ctx.stroke();

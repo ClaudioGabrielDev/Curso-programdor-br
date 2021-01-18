@@ -1,0 +1,26 @@
+p::first-letter{
+    font-size: 40px;
+    font-weight: 700;
+    color: red;
+}
+p::first-line{
+    background-color: black;
+    color: white;
+}
+p::selection{
+    background-color: tomato;
+    color: blue;
+}
+li{
+    list-style: none;
+}
+li::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../img/google.jpg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center; 
+}
