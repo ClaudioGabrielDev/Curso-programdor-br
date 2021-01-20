@@ -1,7 +1,35 @@
+/* flexBox */
+.container2{
+    width: 600px;
+    height: 500px;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+.rect-01{
+    background-color: green;
+    width: var(--var-wh);
+    height: var(--var-wh);
+}
+.rect-02{
+    background-color: red;
+    width: var(--var-wh);
+    height: var(--var-wh);
+}
+.rect-03{
+    background-color: blue;
+    width: var(--var-wh);
+    height: var(--var-wh);
+}
+
+
+
 /* VARIAVEIS NO CSS */
 :root{
     --var-color:red;
     --var-font: 33px;
+    --var-wh: 150px;
 }
 
 .pt1{
