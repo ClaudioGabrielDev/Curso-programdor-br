@@ -1,24 +1,25 @@
 /* flexBox */
 .container2{
-    width: 600px;
+    width: 80%;
     height: 500px;
     background-color: gray;
 
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+
+    /* Aula de wrap */
+    flex-wrap: wrap;
 }
-.rect-01{
+.r1{
     background-color: green;
-    width: var(--var-wh);
-    height: var(--var-wh);
 }
-.rect-02{
+.r2{
     background-color: red;
-    width: var(--var-wh);
-    height: var(--var-wh);
 }
-.rect-03{
+.r3{
     background-color: blue;
+}
+.rect{
     width: var(--var-wh);
     height: var(--var-wh);
 }
@@ -29,7 +30,7 @@
 :root{
     --var-color:red;
     --var-font: 33px;
-    --var-wh: 150px;
+    --var-wh: 200px;
 }
 
 .pt1{
