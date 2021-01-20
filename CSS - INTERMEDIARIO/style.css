@@ -1,3 +1,21 @@
+/* VARIAVEIS NO CSS */
+:root{
+    --var-color:red;
+    --var-font: 33px;
+}
+
+.pt1{
+    color: var(--var-color);
+}
+.pt5{
+    color: var(--var-color);
+    font-size: var(--var-font);
+}
+.pt3{
+    font-size: var(--var-font);
+}
+
+
 /* TRANSFORMAÇÃO */
     .trans{
         width: 400px;
@@ -25,7 +43,7 @@
 
 
 
-/* PSEUDO ELEMENTOS */
+/* PSEUDO ELEMENTOS 
 p::first-letter{
     font-size: 40px;
     font-weight: 700;
@@ -51,4 +69,4 @@ li::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center; 
-}
+} */
